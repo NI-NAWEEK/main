@@ -279,11 +279,11 @@
     }
 
     .faq-item {
-      border-bottom: 1px solid var(--rule);
+      border-bottom: 2px solid var(--accent);
       padding: 1.8rem 0;
     }
 
-    .faq-item:first-child { border-top: 1px solid var(--rule); }
+    .faq-item:first-child { border-top: 2px solid var(--accent); }
 
     .faq-q {
       font-weight: 500;
@@ -312,6 +312,14 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
+
+    .accordion-header {
+    display: flex;                /* Activates Flexbox */
+    align-items: center;          /* Centers items vertically */
+    justify-content: space-between; /* Positions arrow and text on opposite sides */
+    flex-direction: row;          /* Ensures horizontal alignment */
+}
+
 
     /* ── CONTACT ── */
     #contact {
@@ -423,7 +431,7 @@
   <div class="divider"></div>
 
   <!-- PURPOSE -->
-  <div id="purpose">
+  <section id="purpose">
     <h2 style="text-align:center;">The Why</h2>
     <div class="purpose-grid">
       <div class="purpose-card">
@@ -443,7 +451,7 @@
         <p>Monopolies exacerbate inequality, with detrimental impacts to economies and communities. Instagram’s owner, Meta, and Amazon have faced investigations for their (illegal) antitrust practices. <strong>Use NI-NA WEEK to spread attention and resources to other companies intentionally.</strong></p>
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="divider"></div>
 
@@ -452,8 +460,10 @@
     <h2>FAQ</h2>
     <div class="faq-list">
 
-      <div class="faq-item">
-        <p class="faq-q">Why Instagram and Amazon?</p>
+    <div class="faq-item">
+      <div class="accordion-header">
+        <details name="faq">
+          <summary><strong>Why Instagram and Amazon?</strong></summary>
         <div class="faq-a">
           <p>We chose Instagram and Amazon for a few reasons:</p>
           <ul>
@@ -462,38 +472,58 @@
             <li>They are intentionally designed to be addictive and have corporate histories of unethical, if not illegal, behavior in pursuit of profits.</li>
           </ul>
         </div>
+        </details>
+      </div>
       </div>
 
-      <div class="faq-item">
-        <p class="faq-q">What if I don't use Instagram or Amazon?</p>
+    <div class="faq-item">
+      <div class="accordion-header">
+        <details name="faq">
+        <summary><strong>What if I don't use Instagram or Amazon?</strong></summary>
         <div class="faq-a">
           <p>We also chose them because "NI-NA" has a nice ring to it. But NI-NA WEEK is just a tool — a reminder to consume more consciously for a week every month. Choose another platform or pair to skip. For brownie points, pick something under the Meta or Amazon umbrellas (Facebook, Threads, WhatsApp, Whole Foods, Prime Video).</p>
         </div>
+        </details>
       </div>
+    </div>
 
-      <div class="faq-item">
-        <p class="faq-q">What if there are other platforms I'm more concerned about overusing?</p>
+    <div class="faq-item">
+      <div class="accordion-header">
+        <details name="faq">
+        <summary><strong>What if there are other platforms I'm more concerned about overusing?</strong></summary>
         <div class="faq-a">
           <p>We encourage you to skip those instead — or in addition to — Insta and Amazon. NI-NA WEEK is meant to be a tool: a reminder to consume and give attention a bit more consciously for a week every month.</p>
         </div>
+        </details>
       </div>
+    </div>
 
-      <div class="faq-item">
-        <p class="faq-q">When you say "Amazon", does that include Whole Foods?</p>
+    <div class="faq-item">
+      <div class="accordion-header">
+         <details name="faq">
+        <summary><strong>When you say "Amazon" - does that include Whole Foods?</strong></summary>
         <div class="faq-a">
           <p>Ideally, yes, but it's your NI-NA WEEK. We won't be checking in. Maybe start with skipping amazon.com and after a few months, add in a break from Whole Foods. Small changes are the best way to start a new habit — start as small as you need to and build from there.</p>
         </div>
+         </details>
       </div>
+    </div>
 
-      <div class="faq-item">
-        <p class="faq-q">What if I want to start my NI-NA week early or late?</p>
+    <div class="faq-item">
+      <div class="accordion-header">
+          <details name="faq">
+        <summary><strong>What if I want to start my NI-NA week early or late?</strong></summary>
         <div class="faq-a">
           <p>By all means!</p>
         </div>
+          </details>
       </div>
+    </div>
 
-      <div class="faq-item">
-        <p class="faq-q">Do you have any tips for a successful NI-NA WEEK?</p>
+    <div class="faq-item">
+      <div class="accordion-header">
+          <details name="faq">
+        <summary><strong>Do you have any tips for a successful NI-NA WEEK?</strong></summary>
         <div class="faq-a">
           <p>Obvs, yes. So glad you asked.</p>
           <ol>
@@ -504,7 +534,9 @@
             <li>Hit us up on BlueSky with any questions, comments, concerns.</li>
           </ol>
         </div>
+          </details>
       </div>
+    </div>
   </section>
 
   <div class="divider"></div>
